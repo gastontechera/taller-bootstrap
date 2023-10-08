@@ -1,4 +1,10 @@
-.body {
-    color: white;
-    background-color: black;
+p {
+    text-align: justify;
 }
+
+.multi-column-text {
+    column-count: 3;
+    column-gap: 2rem;
+    padding: 1rem 0;
+  }
+  
