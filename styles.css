@@ -1,10 +1,40 @@
+
+.title {
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
 p {
     text-align: justify;
 }
 
+/* Estilo existente */
 .multi-column-text {
-    column-count: 3;
     column-gap: 2rem;
     padding: 1rem 0;
-  }
-  
+}
+
+/* Para pantallas de tamaño sm (≥576px y <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .multi-column-text {
+        column-count: 1;
+    }
+}
+
+/* Para pantallas de tamaño md (≥768px y <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .multi-column-text {
+        column-count: 2;
+    }
+}
+
+/* Para pantallas de tamaño lg (≥992px) */
+@media (min-width: 992px) {
+    .multi-column-text {
+        column-count: 3;
+    }
+}
+
