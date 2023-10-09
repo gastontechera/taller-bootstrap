@@ -14,7 +14,7 @@
 
   <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid" id="nav">
-      <a class="navbar-brand text-uppercase" href="#">lorem ipsum</a>
+      <a class="navbar-brand text-uppercase nav-element" href="#">lorem ipsum</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,25 +22,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Campo de búsqueda para md y tamaños más pequeños -->
-        <form class="d-flex d-md-block d-lg-none mb-2" role="search">
+        <form class="d-flex d-md-block d-lg-none mb-2 nav-element" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </form>
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="nav-element-1">Dolor</a>
+            <a class="nav-link active nav-element" href="#">Dolor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" id="nav-element-2">Sit</a>
+            <a class="nav-link nav-element" href="#">Sit</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true" id="nav-element-3">Amet</a>
+            <a class="nav-link nav-element" href="#">Amet</a>
           </li>
 
           <!-- Dropdown para tamaños md y más pequeños -->
           <li class="nav-item dropdown d-md-block d-lg-none">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" id="nav-element-4">Opciones</a>
+            <a class="nav-link dropdown-toggle nav-element" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="nav-element">Opciones</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item border-bottom list-group-item" href="#">Opción 1</a></li>
               <li><a class="dropdown-item border-bottom list-group-item" href="#">Opción 2</a></li>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="col-lg-9">
-          <p class="multi-column-text">
+          <p class="multi-column-text" id="text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque debitis libero vitae quis magnam!
             Repudiandae
             voluptates non optio natus accusamus laborum sed quasi quod commodi, facere explicabo unde sit officia.

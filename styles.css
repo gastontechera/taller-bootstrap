@@ -1,14 +1,21 @@
 
 .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 3rem;
 }
 
 .subtitle {
     font-size: 1rem;
 }
-p {
+#text {
     text-align: justify;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+#text-carousel {
+    margin-bottom: 2rem;
 }
 
 /* Estilo existente */
@@ -25,16 +32,21 @@ p {
     padding: 0;
 }
 
+#navbar-container {
+    padding-bottom: 0;
+}
+
 .dropdown-menu a {
     text-decoration: underline;
 }
 
-#nav-element-1,
-#nav-element-2,
-#nav-element-3,
-#nav-element-4 {
-    padding: 1rem;
+.nav-element {
+    padding-left: 0.5rem !important;
 }
+
+
+
+
 
 /* Eliminar el padding del menú desplegable */
 .navbar .dropdown-menu {
