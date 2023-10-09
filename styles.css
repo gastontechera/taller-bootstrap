@@ -17,6 +17,43 @@ p {
     padding: 1rem 0;
 }
 
+.list-group-item a {
+    color: inherit;
+}
+
+#nav {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    text-decoration: underline;
+}
+
+#nav-element-1,
+#nav-element-2,
+#nav-element-3,
+#nav-element-4 {
+    padding: 1rem;
+}
+
+/* Eliminar el padding del menú desplegable */
+.navbar .dropdown-menu {
+    padding: 0;
+    border: none; /* Esto es para eliminar cualquier borde que pueda tener el menú desplegable */
+}
+
+/* Ajustar el padding de cada elemento del dropdown */
+.navbar .dropdown-item {
+    padding: 0.5rem 1rem; /* Puedes ajustar estos valores según tus necesidades */
+    border: none; /* Esto es para eliminar cualquier borde que pueda tener el elemento del menú desplegable */
+}
+
+/* Eliminar el fondo gris en hover de cada elemento */
+.navbar .dropdown-item:hover {
+    background-color: transparent;
+}
+
+
 /* Para pantallas de tamaño sm (≥576px y <768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .multi-column-text {
@@ -30,6 +67,22 @@ p {
         column-count: 2;
     }
 }
+
+/* Para pantallas de tamaño md (≥768px y <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .multi-column-text {
+        column-count: 2;
+    }
+    #md-dropdown-menu {
+        position: fixed;
+        top: 56px; /* Ajusta este valor según el alto de tu navbar */
+        right: 15px; /* Ajusta este valor según el ancho de tu página */
+        width: 200px; /* Ajusta este valor según el ancho deseado para el dropdown */
+        z-index: 1050; /* Este valor es para asegurarse de que se muestre por encima de otros elementos */
+    }
+}
+
+
 
 /* Para pantallas de tamaño lg (≥992px) */
 @media (min-width: 992px) {
